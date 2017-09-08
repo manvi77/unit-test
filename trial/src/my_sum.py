@@ -1,4 +1,5 @@
 import argparse
+"""Run from terminal: python my_sum.py -i 1 2"""
 
 
 class add_integers(object):
@@ -14,6 +15,9 @@ class add_integers(object):
             return args
 
 if __name__ == '__main__':
+    """Name of the scope.
+       Execute only if run as a script."""
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--parse-integers', '-i', nargs='+',
                         type=int, help="Input integers.")
